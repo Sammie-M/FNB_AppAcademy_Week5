@@ -6,35 +6,35 @@
   <body>
     <table border="1">
       <tr>
-        <td colspan="4">
+        <td colspan="4" class="inputColomn">
           <input type="text" id="inputBox" value="0" />
         </td>
       </tr>
       <tr>
-        <td onclick="digitBtnPressed(7)">7</td>
-        <td onclick="digitBtnPressed(8)">8</td>
-        <td onclick="digitBtnPressed(9)">9</td>
-        <td onclick="operatorPressed('*')">x</td>
+        <td class="digitBtn" onclick="digitBtnPressed(7)">7</td>
+        <td class="digitBtn" onclick="digitBtnPressed(8)">8</td>
+        <td class="digitBtn" onclick="digitBtnPressed(9)">9</td>
+        <td class="operatorBtn" onclick="operatorPressed('*')">x</td>
       </tr>
       <tr>
-        <td onclick="digitBtnPressed(4)">4</td>
-        <td onclick="digitBtnPressed(5)">5</td>
-        <td onclick="digitBtnPressed(6)">6</td>
-        <td onclick="operatorPressed('-')">-</td>
+        <td class="digitBtn" onclick="digitBtnPressed(4)">4</td>
+        <td class="digitBtn" onclick="digitBtnPressed(5)">5</td>
+        <td class="digitBtn" onclick="digitBtnPressed(6)">6</td>
+        <td class="operatorBtn" onclick="operatorPressed('-')">-</td>
       </tr>
       <tr>
-        <td onclick="digitBtnPressed(1)">1</td>
-        <td onclick="digitBtnPressed(2)">2</td>
-        <td onclick="digitBtnPressed(3)">3</td>
-        <td onclick="operatorPressed('+')">+</td>
+        <td class="digitBtn" onclick="digitBtnPressed(1)">1</td>
+        <td class="digitBtn" onclick="digitBtnPressed(2)">2</td>
+        <td class="digitBtn" onclick="digitBtnPressed(3)">3</td>
+        <td class="operatorBtn" onclick="operatorPressed('+')">+</td>
       </tr>
       <tr>
-        <td colspan="2" onclick="digitBtnPressed(0)">0</td>
-        <td onclick="btnACPressed()">AC</td>
-        <td onclick="operatorPressed('/')">/</td>
+        <td colspan="2" class="digitBtn" onclick="digitBtnPressed(0)">0</td>
+        <td class="acBtn" onclick="btnACPressed()">AC</td>
+        <td class="operatorBtn" onclick="operatorPressed('/')">/</td>
       </tr>
       <tr>
-        <td colspan="4" onclick="equalBtnPressed()">=</td>
+        <td class="operatorBtn" colspan="4" onclick="equalBtnPressed()">=</td>
       </tr>
 
       <script>

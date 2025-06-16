@@ -1,0 +1,48 @@
+table{
+    background-color: #fcebf8ec;
+    color: #fff;
+    text-align: center;
+    font: normal 3em monospace;
+    border: 2px rgb(177, 112, 177) outset;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+tr{
+    height: 16.02vh;
+    background-color: #ee91db;
+}
+
+td{
+    width: 25vw;
+    border-radius: 20px;
+    background-color: #fcebf8;
+}
+
+td.inputColomn{
+    border: 0;
+    border-radius: 0;
+}
+
+#inputBox{
+    background-color: #d8adcf;
+    text-align: right;
+    font-size: 2em;
+    width: 100%;
+    color: #fff;
+    border-radius: 25px;
+    border: 2px solid #9b7f9b;
+}
+
+.digitBtn{
+    background-color: #d1acd1fa;
+}
+
+.operatorBtn{
+    background-color: #c560c5d0;
+}
+
+.acBtn{
+    background-color: #cc3ecc;
+}
+
