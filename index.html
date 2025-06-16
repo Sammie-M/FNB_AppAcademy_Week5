@@ -34,11 +34,11 @@
         <td onclick="operatorPressed('/')">/</td>
       </tr>
       <tr>
-        <td colspan="4">=</td>
+        <td colspan="4" onclick="equalBtnPressed()">=</td>
       </tr>
 
       <script>
-        //When any digit button is pressed
+        //When any digit button is clicked
         function digitBtnPressed(button) {
           if (newLine) {
             document.getElementById("inputBox").value = button;
@@ -49,16 +49,46 @@
           }
         }
 
-        //When AC button is pressed
+        //When AC button is clicked
         function btnACPressed() {
           document.getElementById("inputBox").value = 0;
           newLine = true;
         }
 
-        function operatorPressed(operator){
-            currentOperator = operator;
-            value1 = parseInt(document.getElementById("inputBox").value);
-            newLine = true;
+        //When any operation sign is clicked
+        function operatorPressed(operator) {
+          currentOperator = operator;
+          value1 = parseInt(document.getElementById("inputBox").value);
+          newLine = true;
+        }
+
+        //When the equal sign is clicked
+        function equalBtnPressed() {
+          var value2 = parseInt(document.getElementById("inputBox").value);
+          var finalTotal;
+
+          switch (currentOperator) {
+            case "*":
+              finalTotal = value1 * value2;
+              break;
+
+            case "-":
+              finalTotal = value1 - value2;
+              break;
+
+            case "+":
+              finalTotal = value1 + value2;
+              break;
+
+            case "/":
+              finalTotal = value1 / value2;
+              break;
+          }
+
+          document.getElementById("inputBox").value = finalTotal;
+
+          value1 = 0;
+          newLine = true;
         }
 
         var newLine = true;
