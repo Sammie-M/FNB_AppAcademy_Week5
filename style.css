@@ -9,7 +9,7 @@ table{
 }
 
 tr{
-    height: 16.02vh;
+    height: 14vh;
     background-color: #ee91db;
 }
 
@@ -36,10 +36,19 @@ td.inputColomn{
 
 .digitBtn{
     background-color: #d1acd1fa;
+    transition: all 300ms ease-in-out;
+}
+
+.digitBtn:hover{
+    background-color: #530953;
 }
 
 .operatorBtn{
     background-color: #c560c5d0;
+}
+
+.operatorBtn:hover{
+    background-color: #530953;
 }
 
 .acBtn{
